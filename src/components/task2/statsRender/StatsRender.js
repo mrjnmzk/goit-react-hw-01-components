@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import styles from '../statistics/statistics.module.css';
 
 function getRandomColor() {
-  var r = function () {
+  const a = function () {
     return Math.floor(Math.random() * 256);
   };
-  return 'rgb(' + r() + ',' + r() + ',' + r() + ')';
+  return 'rgb(' + a() + ',' + a() + ',' + a() + ')';
 }
 
 const StatsRender = ({ stats }) => {
